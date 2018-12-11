@@ -18,7 +18,7 @@ const styles = StyleSheet.create({
         flex: 1,
         flexDirection: "row",   // default is "column"
         alignItems: "center",
-        justifyContent: "center",
+        justifyContent: "space-between",   // available options: flex-start, center, flex-end, space-around, space-between and space-evenly
         // height: 300,
     },
     powderblue: {
