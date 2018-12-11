@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
 import { StyleSheet, View } from 'react-native';
 
-export default class FixedDimensionsBasics extends Component {
+export default class FlexDimensionsBasics extends Component {
     render() {
         return (
-            <View>
+            // Try removing the 'flex: 1' on the parent View.
+            // The parent will not have dimensions, so the children can't expan.
+            // What if you add 'height: 300' instead of 'flex: 1'?
+            <View style={styles.container}>
                 <View style={styles.powderblue}/>
                 <View style={styles.skyblue}/>
                 <View style={styles.steelblue}/>
@@ -14,19 +17,20 @@ export default class FixedDimensionsBasics extends Component {
 }
 
 const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        // height: 300,
+    },
     powderblue: {
-        width: 50, 
-        height: 50, 
+        flex: 0.2,
         backgroundColor: "powderblue",
     },
     skyblue: {
-        width: 100,
-        height: 100,
+        flex: 0.3,
         backgroundColor: "skyblue",
     },
     steelblue: {
-        width: 150,
-        height: 150,
+        flex: 0.5,
         backgroundColor: "steelblue",
     },
 });
