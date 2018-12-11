@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import BlinkApp from './components/BlinkApp.js';
+import LotsOfStyles from './components/LotsOfStyles.js';
 
 export default class App extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <BlinkApp/>
+        <LotsOfStyles/>
       </View>
     );
   }
