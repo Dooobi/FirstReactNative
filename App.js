@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import Game from './components/Game.js';
+import Bananas from './components/Bananas.js';
 
 export default class App extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Game/>
+        <Bananas/>
       </View>
     );
   }
