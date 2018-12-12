@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import ButtonBasics from './components/ButtonBasics.js';
+import ScrollingExample from './components/ScrollingExample.js';
 
 export default class App extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <ButtonBasics/>
+        <ScrollingExample/>
       </View>
     );
   }
