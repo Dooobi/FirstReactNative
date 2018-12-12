@@ -1,13 +1,22 @@
 import React, { Component } from 'react';
-import { StyleSheet, View } from 'react-native';
+import { StyleSheet, View, TextInput, Text } from 'react-native';
 
-export default class FlexDirectionBasics extends Component {
+export default class PizzaTranslator extends Component {
+    constructor(props) {
+        super(props);
+        this.state = { text: '' };
+    }
+
     render() {
         return (
             <View style={styles.container}>
-                <View style={styles.powderblue}/>
-                <View style={styles.skyblue}/>
-                <View style={styles.steelblue}/>
+                <TextInput style={{height: 40}}
+                    placeholder="Type here to translate!"
+                    onChangeText={(text) => this.setState({text})}
+                />
+                <Text style={{padding: 10, fontSize: 42}}>
+                    {this.state.text.split(' ').map((word) => word && '🍕').join(' ')}
+                </Text>
             </View>
         );
     }
@@ -15,6 +24,7 @@ export default class FlexDirectionBasics extends Component {
 
 const styles = StyleSheet.create({
     container: {
+        padding: 10,
         flex: 1,
         flexDirection: "column",   // default is "column"
         alignItems: "stretch",  // available options: flex-start, center, flex-end and stretch
