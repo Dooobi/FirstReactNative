@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import PizzaTranslator from './components/PizzaTranslator.js';
+import ButtonBasics from './components/ButtonBasics.js';
 
 export default class App extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <PizzaTranslator/>
+        <ButtonBasics/>
       </View>
     );
   }
