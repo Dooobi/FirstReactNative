@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import SectionListBasics from './components/SectionListBasics.js';
+import FetchExample from './components/FetchExample.js';
 
 export default class App extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <SectionListBasics/>
+        <FetchExample/>
       </View>
     );
   }
