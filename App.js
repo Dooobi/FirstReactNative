@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import FlatListBasics from './components/FlatListBasics.js';
+import SectionListBasics from './components/SectionListBasics.js';
 
 export default class App extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <FlatListBasics/>
+        <SectionListBasics/>
       </View>
     );
   }
